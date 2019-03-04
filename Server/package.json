@@ -1,0 +1,33 @@
+{
+  "name": "server",
+  "version": "1.0.0",
+  "description": "backend for rentProprty",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/sachinsinghsindhu/rentProperty.git"
+  },
+  "keywords": [
+    "rent",
+    "property",
+    "node.js"
+  ],
+  "author": "sachin sindhu",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/sachinsinghsindhu/rentProperty/issues"
+  },
+  "homepage": "https://github.com/sachinsinghsindhu/rentProperty#readme",
+  "dependencies": {
+    "bcrypt": "^3.0.4",
+    "body-parser": "^1.18.3",
+    "cookie-parser": "^1.4.4",
+    "cors": "^2.8.5",
+    "express": "^4.16.4",
+    "jsonwebtoken": "^8.5.0"
+  }
+}
