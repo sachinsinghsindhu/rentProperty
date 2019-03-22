@@ -31,7 +31,28 @@ function createUser(userName, password) {
     });
 }
 
+function addProperty(userName, property) {
+    const qry = `insert into property (userName, propertyPics) values ('${userName}', '${JSON.stringify(property.propertyPics)}')`;
+    return new Promise(function(resolve) {
+        pool.query(qry, (err, result) => {
+            if(err) throw err;
+            else resolve(result);
+        });
+    });
+}
+
+function addProfilePic(userName, profilePic) {
+    const qry = `update users set profilePic = '${profilePic}' where userName = '${userName}'`;
+    return new Promise(function(resolve) {
+        pool.query(qry, (err, result) => {
+            if(err) throw err;
+            else resolve(result);
+        });
+    });
+}
 module.exports = {
     findUser: findUser,
     createUser: createUser,
+    addProperty: addProperty,
+    addProfilePic: addProfilePic,
 }
