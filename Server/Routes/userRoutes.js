@@ -7,7 +7,7 @@ userRoutes.get('/login', userController.loginController);
 userRoutes.post('/signup', userController.signUpController);
 
 // userRoutes.get('/personalProperty', userController.getProperty);
-
+//
 userRoutes.post('/addProperty', userController.addProperty);
 
 userRoutes.post('/addProfilePic', userController.addProfilePic);
