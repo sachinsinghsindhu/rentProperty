@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/sachinsinghsindhu/rentProperty#readme",
   "dependencies": {
-    "aws-sdk": "^2.422.0",
+    "aws-sdk": "^2.814.0",
     "bcrypt": "^3.0.4",
     "body-parser": "^1.18.3",
     "cookie-parser": "^1.4.4",
